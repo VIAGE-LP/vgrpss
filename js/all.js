@@ -34,20 +34,3 @@ $(document).ready(function () {
     });
 });
 
-$("#lp_form").ready(function () {
-    //購物車下拉選單判斷缺貨中
-    $('select[data-category="內衣"]').change(function (e) {
-        e.preventDefault();
-        var size_selector = document.querySelector('select[data-category="內衣"][data-name="size-selector"]').value;
-        var color_selector = document.querySelector('select[data-category="內衣"][name="color-selector"]').value;
-        var preorder_text = $('<span>', { text: '(預購)', style: 'color: red;' });
-        $('.form-group > span').empty();
-        if ( (color_selector == "異色黑" && size_selector == "ML")) {
-            $('select[data-category="內衣"][data-name="size-selector"]').parent().after(preorder_text);
-        } else {
-            $('.form-group > span').empty();
-        }
-    });
-    
-    // 異色黑：ML
-});
