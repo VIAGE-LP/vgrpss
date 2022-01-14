@@ -19,34 +19,25 @@
         width: 100%;
     }
 }
-.anniversary_1{
+img.anniversary_2{
+    width:40%;
+    position: fixed;
+    top:-1.5%;
+    z-index:100;
+    right:31%;
     cursor: pointer;
-}
-.anniversary_2 {
-    display:none;
-    position:fixed;
-    z-index:98;
-    top:-3%;
-    right:-33.3vh;
-    left:-33.3vh;
-}
-.anniversary_2 img{
-    display:none;
-    width:30%;
 }
 
 @media screen and (max-width: 768px){
-    .anniversary_2 {
-        display:none;
-        position:fixed;
-        z-index:98;
-        top:5%;
-        right:-33.3vh;
-        left:-33.3vh;
+    img.anniversary_2{
+        width:104%;
+        top: 5%;
+        right:-1%;
     }
-    .anniversary_2 img{
-        display:none;
-        width:50%;
+}
+@media screen and (max-width: 414px){
+    img.anniversary_2 {
+       top: 10%;
     }
 }
 
